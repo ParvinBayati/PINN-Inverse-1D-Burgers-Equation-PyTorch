@@ -1,4 +1,4 @@
-# Physics-Informed Neural Networks (PINNs) for Forward and Inverse Burgers' Equation
+# PINN for Forward and Inverse Burgers' Equation (PyTorch)
 
 This repository demonstrates the implementation of **Physics-Informed Neural Networks (PINNs)** in **PyTorch** for solving both the **forward** and **inverse** one-dimensional viscous Burgers' equation.
 
@@ -111,18 +111,6 @@ Automatic differentiation is used to evaluate the derivatives appearing in the g
 
 ---
 
-# Numerical Methods
-
-- Physics-Informed Neural Networks (PINNs)
-- Automatic Differentiation
-- Latin Hypercube Sampling
-- Hopf–Cole Transformation
-- Gauss–Hermite Quadrature
-- Adam Optimizer
-- L-BFGS Optimizer
-
----
-
 # Requirements
 
 - Python 3.10+
@@ -133,12 +121,6 @@ Automatic differentiation is used to evaluate the derivatives appearing in the g
 - pandas
 - Jupyter Notebook
 
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 # Running the notebooks
@@ -148,13 +130,13 @@ Open either notebook using Jupyter Lab or Jupyter Notebook.
 Forward problem
 
 ```
-notebooks/Burgers_Forward_PINN.ipynb
+notebooks/Burgers_Forward_PINN_PyTorch.ipynb
 ```
 
 Inverse problem
 
 ```
-notebooks/Burgers_Inverse_PINN.ipynb
+notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 ```
 
 ---
@@ -176,35 +158,6 @@ Example figures include
 - Training loss
 - Estimated viscosity
 
----
-
-# Skills Demonstrated
-
-This project showcases experience in
-
-- Scientific Machine Learning
-- Physics-Informed Neural Networks
-- Inverse Problems
-- Computational Physics
-- Scientific Computing
-- Partial Differential Equations
-- Numerical Analysis
-- PyTorch
-- Automatic Differentiation
-- GPU Computing
-
----
-
-# Future Improvements
-
-Potential extensions include
-
-- Adaptive collocation sampling
-- XPINNs and domain decomposition
-- Neural Operators
-- Multi-parameter inverse problems
-- Bayesian PINNs
-- Higher-dimensional PDEs
 
 ---
 
