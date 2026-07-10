@@ -141,7 +141,7 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 ---
 
-# Example Results
+# Representative Results
 
 The repository demonstrates
 
