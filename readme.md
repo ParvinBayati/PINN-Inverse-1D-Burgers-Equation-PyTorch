@@ -149,7 +149,7 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 <table>
   <tr>
     <td><img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
-    <td><img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
+    <td><img src="figures/loss_history_ADAM_forward.png" width="400" alt="flow field">
   </tr>
 </table>
 
