@@ -1,23 +1,8 @@
 # PINN for Forward and Inverse Burgers' Equation (PyTorch)
 
-10.1016/j.jcp.2018.10.045
-
 This repository demonstrates the implementation of **Physics-Informed Neural Networks (PINNs)** in **PyTorch** for solving both the **forward** and **inverse** one-dimensional viscous Burgers' equation.
 
 The project illustrates how neural networks can incorporate physical laws directly into the loss function to solve partial differential equations (PDEs), while also estimating unknown physical parameters.
-
----
-
-## Features
-
-- PyTorch implementation
-- Forward PINN for solving Burgers' equation
-- Inverse PINN for estimating viscosity
-- Automatic differentiation for PDE residuals
-- Hopf–Cole analytical solution for validation
-- Gauss–Hermite quadrature implementation
-- Latin Hypercube Sampling (LHS) for collocation points
-- GPU support (CUDA)
 
 ---
 
@@ -59,17 +44,7 @@ $$
 
 # Forward Problem
 
-The forward PINN assumes the viscosity is known and predicts the solution
-
-$$
-u(x,t)
-$$
-
-throughout the computational domain by minimizing
-
-- PDE residual
-- Initial condition loss
-- Boundary condition loss
+The forward PINN assumes the viscosity is known and predicts the solution $u(x,t)$ throughout the computational domain by minimizing PDE residual, Initial condition loss, and Boundary condition loss.
 
 ---
 
@@ -120,7 +95,6 @@ Automatic differentiation is used to evaluate the derivatives appearing in the g
 - NumPy
 - SciPy
 - Matplotlib
-- pandas
 - Jupyter Notebook
 
 ---
@@ -145,7 +119,7 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 # Representative Results
 
-## Forward Problem Using L-BFGS or ADAM Optimizers
+## Forward Problem Using Either L-BFGS or ADAM Optimizers
 ### Convergence History
 
 <table>
@@ -174,11 +148,13 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 </table>
 
 
-## Inverse Problem Using L-BFGS or ADAM Optimizers
+## Inverse Problem Using Either L-BFGS or ADAM Optimizers
 
 
 ---
 
-# License
+# Citation
 
-MIT License
+M. Raissi, P. Perdikaris, G. E. Karniadakis, **Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations**,  Journal of Computational Physics 378 (2019) 686–707
+
+https://www.sciencedirect.com/science/article/pii/S0021999118307125?via%3Dihub
