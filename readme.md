@@ -23,11 +23,7 @@ The project illustrates how neural networks can incorporate physical laws direct
 
 The one-dimensional viscous Burgers' equation is
 
-$$
-\frac{\partial u}{\partial t}
-+
-u\frac{\partial u}{\partial x}
-=
+$$\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial x}=
 \nu
 \frac{\partial^2u}{\partial x^2},
 $$
@@ -35,9 +31,9 @@ $$
 where
 
 - $u(x,t)$ is the velocity,
-- $\nu$ is the viscosity.
+- $\nu$ is the kinematic viscosity (or diffusion coefficient)
 
-The computational domain is
+Here, the computational domain is
 
 $$
 x\in[-1,1],
@@ -45,13 +41,13 @@ x\in[-1,1],
 t\in[0,1].
 $$
 
-Initial condition
+## Initial condition
 
 $$
 u(x,0)=-\sin(\pi x).
 $$
 
-Boundary conditions
+## Boundary conditions
 
 $$
 u(-1,t)=u(1,t)=0.
@@ -77,27 +73,16 @@ throughout the computational domain by minimizing
 
 # Inverse Problem
 
-The inverse PINN simultaneously learns
-
-- the solution
-
-$$
-u(x,t)
-$$
-
-and
-
-- the unknown viscosity
-
-$$
-\nu.
-$$
+In the inverse probelm, thekinematic visocity is unkonwn and the main goal is to estimate it. **The inverse PINN simultaneously learns
+the solution $u(x,t)$ and the unknown viscosity $\nu$.**
 
 The viscosity is treated as a trainable neural network parameter and is optimized together with the network weights.
 
 ---
 
 # Analytical Solution
+
+https://en.wikipedia.org/wiki/Burgers%27_equation
 
 Synthetic training data are generated using the analytical solution obtained from the **Hopf–Cole transformation**, which converts Burgers' equation into the linear heat equation.
 
@@ -107,44 +92,22 @@ The resulting integral solution is evaluated using **Gauss–Hermite quadrature*
 
 # PINN Loss Function
 
-The total loss consists of
+A neural network is trained to approximate the unknown solution field.
 
-$$
-\mathcal L
-=
-\mathcal L_{PDE}
-+
-\mathcal L_{IC}
-+
-\mathcal L_{BC}
-+
-\mathcal L_{Data}.
-$$
+The loss function combines:
+
+* Data residual loss
+* PDE residual loss
+* Boundary condition loss
+* Initial condition loss
+
+$$\mathcal{L} = \mathcal{L}_{Phys} + \lambda_{data} \mathcal{L}_{data}$$
 
 where
 
-- PDE residual loss
-- Initial condition loss
-- Boundary condition loss
-- Data loss (inverse problem)
+$$\mathcal{L}_{Phys} = \mathcal{L}_{PDE} + \mathcal{L}_{BC} + \mathcal{L}_{IC}$$
 
----
-
-# Repository Structure
-
-```
-inverse-burgers-pinn
-│
-├── notebooks
-│   ├── Burgers_Forward_PINN.ipynb
-│   └── Burgers_Inverse_PINN.ipynb
-│
-├── figures
-│
-├── requirements.txt
-│
-└── README.md
-```
+Automatic differentiation is used to evaluate the derivatives appearing in the governing equations.
 
 ---
 
