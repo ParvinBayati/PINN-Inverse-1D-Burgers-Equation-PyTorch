@@ -143,6 +143,13 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 # Representative Results
 
+
+### Convergence History for forward problem using L-BFGS or ADAM optimizers.
+
+<img src="figures/loss_history_LBFGS.png" width="400" alt="flow field">
+<img src="figures/loss_history_ADAM.png" width="400" alt="flow field">
+
+
 The repository demonstrates
 
 - Learning the Burgers' solution over the full space-time domain.
