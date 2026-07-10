@@ -144,17 +144,33 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 # Representative Results
 
 ## Forward Problem Using L-BFGS or ADAM Optimizers
-### Convergence History 
+### Convergence History
 
-<img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
+<table>
+  <tr>
+    <td><img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
+    <td><img src="figures/loss_history_ADAM_forward.png" width="400" alt="flow field">
+  </tr>
+</table>
 
 ### Solution of $u(x,t)$
 
-<img src="figures/absolute_error_LBFGS_forward.png" width="400" alt="flow field">
+<table>
+  <tr>
+    <td><img src="figures/u_LBFGS_forward.png" width="400" alt="flow field">
+    <td><img src="figures/u_ADAM_forward.png" width="400" alt="flow field">
+  </tr>
+</table>
 
 ### Absolute error of PINN prediction vs. analytical solution
 
-<img src="figures/u_LBFGS_forward.png" width="400" alt="flow field">
+<table>
+  <tr>
+    <td><img src="figures/absolute_error_LBFGS_forward.png" width="400" alt="flow field">
+    <td><img src="figures/absolute_error_ADAM_forward.png" width="400" alt="flow field">
+  </tr>
+</table>
+
 
 ## Inverse Problem Using L-BFGS or ADAM Optimizers
 
