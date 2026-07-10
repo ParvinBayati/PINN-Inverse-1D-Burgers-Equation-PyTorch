@@ -143,27 +143,20 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 # Representative Results
 
+## Forward Problem Using L-BFGS or ADAM Optimizers
+### Convergence History 
 
-### Convergence History for forward problem using L-BFGS or ADAM optimizers.
+<img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
 
-<img src="figures/loss_history_LBFGS.png" width="400" alt="flow field">
-<img src="figures/loss_history_ADAM.png" width="400" alt="flow field">
+### Solution of $u(x,t)$
 
+<img src="figures/absolute_error_LBFGS_forward.png" width="400" alt="flow field">
 
-The repository demonstrates
+### Absolute error of PINN prediction vs. analytical solution
 
-- Learning the Burgers' solution over the full space-time domain.
-- Recovering the viscosity coefficient from sparse observations.
-- Comparing the PINN prediction with the analytical Hopf–Cole solution.
-- Monitoring convergence of the loss function and viscosity estimate.
+<img src="figures/u_LBFGS_forward.png" width="400" alt="flow field">
 
-Example figures include
-
-- Exact solution
-- PINN prediction
-- Absolute error
-- Training loss
-- Estimated viscosity
+## Inverse Problem Using L-BFGS or ADAM Optimizers
 
 
 ---
