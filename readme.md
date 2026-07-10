@@ -1,5 +1,7 @@
 # PINN for Forward and Inverse Burgers' Equation (PyTorch)
 
+10.1016/j.jcp.2018.10.045
+
 This repository demonstrates the implementation of **Physics-Informed Neural Networks (PINNs)** in **PyTorch** for solving both the **forward** and **inverse** one-dimensional viscous Burgers' equation.
 
 The project illustrates how neural networks can incorporate physical laws directly into the loss function to solve partial differential equations (PDEs), while also estimating unknown physical parameters.
