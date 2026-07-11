@@ -149,7 +149,23 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 
 ## Inverse Problem Using Either L-BFGS or ADAM Optimizers
+### Convergence History
 
+<table>
+  <tr>
+    <td><img src="figures/loss_history_LBFGS_inverse.png" width="400" alt="flow field">
+    <td><img src="figures/loss_history_ADAM_inverse.png" width="400" alt="flow field">
+  </tr>
+</table>
+
+### Estimation of $nu$
+
+<table>
+  <tr>
+    <td><img src="figures/nu_LBFGS_inverse.png" width="400" alt="flow field">
+    <td><img src="figures/nu_ADAM_inverse.png" width="400" alt="flow field">
+  </tr>
+</table>
 
 ---
 
