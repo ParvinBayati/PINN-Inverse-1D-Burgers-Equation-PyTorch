@@ -124,8 +124,8 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 <table>
   <tr>
-    <td><img src="figures/loss_history_LBFGS_forward.png" width="400" alt="flow field">
-    <td><img src="figures/loss_history_ADAM_forward.png" width="400" alt="flow field">
+    <td><img src="figures/loss_history_LBFGS_forward.png" width="400" alt="loss LBFGS">
+    <td><img src="figures/loss_history_ADAM_forward.png" width="400" alt="loss ADAM">
   </tr>
 </table>
 
@@ -133,8 +133,8 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 <table>
   <tr>
-    <td><img src="figures/u_LBFGS_forward.png" width="400" alt="flow field">
-    <td><img src="figures/u_ADAM_forward.png" width="400" alt="flow field">
+    <td><img src="figures/u_LBFGS_forward.png" width="400" alt="u LBFGS">
+    <td><img src="figures/u_ADAM_forward.png" width="400" alt="u LBFGS">
   </tr>
 </table>
 
@@ -142,8 +142,8 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 <table>
   <tr>
-    <td><img src="figures/absolute_error_LBFGS_forward.png" width="400" alt="flow field">
-    <td><img src="figures/absolute_error_ADAM_forward.png" width="400" alt="flow field">
+    <td><img src="figures/absolute_error_LBFGS_forward.png" width="400" alt="error">
+    <td><img src="figures/absolute_error_ADAM_forward.png" width="400" alt="error">
   </tr>
 </table>
 
@@ -153,8 +153,8 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 <table>
   <tr>
-    <td><img src="figures/loss_history_LBFGS_inverse.png" width="400" alt="flow field">
-    <td><img src="figures/loss_history_ADAM_inverse.png" width="400" alt="flow field">
+    <td><img src="figures/loss_history_LBFGS_inverse.png" width="400" alt="loss">
+    <td><img src="figures/loss_history_ADAM_inverse.png" width="400" alt="loss">
   </tr>
 </table>
 
@@ -162,8 +162,8 @@ notebooks/Burgers_Inverse_PINN_PyTorch.ipynb
 
 <table>
   <tr>
-    <td><img src="figures/nu_LBFGS_inverse.png" width="400" alt="flow field">
-    <td><img src="figures/nu_ADAM_inverse.png" width="400" alt="flow field">
+    <td><img src="figures/nu_LBFGS_inverse.png" width="400" alt="nu LBFGS">
+    <td><img src="figures/nu_ADAM_inverse.png" width="400" alt="nu ADAM">
   </tr>
 </table>
 
